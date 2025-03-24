@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Matthew Livernoche",
+  "classifications": [ "Common", "Console" ],
+  "identity": "YGOHandAnalysisTemplate.ConsoleProject",
+  "name": "Console Analyzer (YGOHandAnalysisTemplate)",
+  "shortName": "YGOHandAnalysisTemplate",
+  "sourceName": "YGOHandAnalysisTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+}
