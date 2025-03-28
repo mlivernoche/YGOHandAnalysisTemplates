@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Matthew Livernoche",
+  "classifications": [ "Common", "Console" ],
+  "identity": "YGOHandAnalysisTemplate.SimpleAnalyzerWSourceGen",
+  "name": "Simple Console Analyzer w/ Card Source Gen (YGOHandAnalysisTemplate)",
+  "shortName": "SimpleAnalyzerWSourceGen",
+  "sourceName": "SimpleAnalyzerWSourceGen",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

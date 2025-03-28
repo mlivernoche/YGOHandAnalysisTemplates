@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "name": "Generic Dark Dragon of Darkness",
+      "type": "Effect Monster",
+      "desc": "Once per turn: you can activate this effect; Tribute this card.",
+      "atk": 9000,
+      "def": 9000,
+      "level": 12,
+      "race": "Dragon",
+      "attribute": "DARK"
+    },
+    {
+      "name": "Amazing Brick of Brickiness",
+      "type": "Effect Monster",
+      "desc": "Once per turn: you can activate this effect; you lose the duel.",
+      "atk": 0,
+      "def": 0,
+      "level": 1,
+      "race": "Spellcaster",
+      "attribute": "DARK"
+    }
+  ]
+}
