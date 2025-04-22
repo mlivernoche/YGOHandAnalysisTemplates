@@ -8,8 +8,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CardSourceGenerator" Version="1.3.1" />
-		<PackageReference Include="YGOHandAnalysisFramework" Version="1.2.5" />
+		<PackageReference Include="CardSourceGenerator" Version="1.3.2" />
+		<PackageReference Include="YGOHandAnalysisFramework" Version="1.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>

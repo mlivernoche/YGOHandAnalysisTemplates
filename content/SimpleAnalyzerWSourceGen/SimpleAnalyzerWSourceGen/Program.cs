@@ -49,8 +49,9 @@ var cardList = CardList
     });
 
 // Step 3. Create a HandAnalyzer<>. This has all possible hands that the deck can produce.
-var analyzerBuildArgs = HandAnalyzerBuildArguments.Create(analyzerName, handSize, cardList);
-var handAnalyzer = HandAnalyzer.Create(analyzerBuildArgs);
+var handAnalyzer = cardList
+    .CreateHandAnalyzerBuildArgs(analyzerName, handSize)
+    .CreateHandAnalyzer();
 
 // Step 4. Create filters that determine which hands we want to see.
 // You can use these lambdas to filter cards.
@@ -85,7 +86,7 @@ Console.WriteLine($"Analyzer Name: {analyzerName}.");
 Console.WriteLine($"Deck Size: {deckSize:N0}.");
 Console.WriteLine($"Hand Size: {handSize:N0}.");
 Console.WriteLine($"Probability Of Drawing Starter: {probOfStarter:P2}.");
-Console.WriteLine($"Probability Of Drawing Starter AND Brick: {probOfStarterWithNoBrick:P2}.");
+Console.WriteLine($"Probability Of Drawing Starter WITHOUT Brick: {probOfStarterWithNoBrick:P2}.");
 Console.WriteLine();
 
 // This loop is freely removable.
@@ -96,3 +97,24 @@ foreach (var (key, cardGroup) in handAnalyzer.CardGroups)
     Console.WriteLine($"Maximum: {cardGroup.Maximum:N0}.");
     Console.WriteLine();
 }
+
+// The output should be:
+/*
+ * Analyzer Name: Simple Analyzer With Source Generation.
+ * Deck Size: 40.
+ * Hand Size: 5.
+ * Probability Of Drawing Starter: 33.76%.
+ * Probability Of Drawing Starter WITHOUT Brick: 30.21%.
+ * 
+ * Generic Dark Dragon of Darkness: 3.
+ * Minimum: 0.
+ * Maximum: 3.
+ * 
+ * Amazing Brick of Brickiness: 1.
+ * Minimum: 0.
+ * Maximum: 1.
+ * 
+ * Miscellaneous: 36.
+ * Minimum: 0.
+ * Maximum: 36.
+ */

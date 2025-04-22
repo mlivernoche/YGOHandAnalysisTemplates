@@ -12,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="YGOHandAnalysisFramework" Version="1.2.5" />
+		<PackageReference Include="YGOHandAnalysisFramework" Version="1.4.0" />
 	</ItemGroup>
 
 </Project>
